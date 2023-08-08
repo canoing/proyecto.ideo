@@ -1,3 +1,7 @@
+// fetch
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,17 +10,21 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
-
-
-        let url = 'https://jsonplaceholder.typicode.com/albums'
-        fetch(url)
-            .then(responde => responde.json())
-            .then(data => console.log(data))
-            .catch(error => console.log(error))
-          
-
-    </script>
+   
 
 </body>
+<script>
+    let scr = 'https://jsonplaceholder.typicode.com/albums'
+    fetch(scr)
+        .then(responde => responde.json())
+        .then(data => {
+            let respuesta = document
+        console.log(data))
+
+        }
+        .catch(error => console.log(error))
+      
+
+</script>
 </html>
+<!DOCTYPE html>

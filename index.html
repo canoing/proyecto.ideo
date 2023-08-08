@@ -20,30 +20,36 @@
         </nav>
     </header>
     <main>
+        
         <section class="formular">
             <h1>Login</h1>
-            <script>src = "script.js"</script>
+            
             <form>
                 <div class="username">
-                    <input type="text" name="username" id="Usernm" required>
-                    <label>Username</label>
+                    <input type="text" name="username" id="Usernm" required placeholder="Username">
                 </div>
                 <div class="password">
-                    <input type="password" name="password" id="Pswd" minlength="8" required>
-                    <label>Password</label>
+                    <input type="password" name="password" id="Pswd" minlength="8" required placeholder="Password">
+                    <input onclick=ojo() type=button value="👁️">
                 </div>
                 <div class="mail">
                     <input type="email" name="email" id="Mail" required>
                     <label>E-mail</label>
                 </div>
                 <div class="forgetPassword">Forget password?</div>
-                <input type="submit" name="Login" id="Lgn" value="Login">
+                <button id="button">crear</button>
+
+
                 <div class="notYet">
-                    Need an accout? <a href="inicion.html" target="_blank">register now</a>
-                    
+                    Need an account? <a href="inicion.html" >register now</a>
                 </div>
             </form>
         </section>
     </main>
+    <footer>
+       
+    
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
