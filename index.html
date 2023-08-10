@@ -1,55 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
-    <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Icon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ickler</title>
+    <title>Suavemente</title>
 </head>
+
 <body>
-    <header class="header">
-        <div class="logo">
-            <img src="./icon.ico" height="70px">
-            <h1>Ickler</h1>
+    <!-- Header -->
+    <header>
+        <!-- logo -->
+        <div class="weblogo">
+            <img src="./Icon.ico" alt="icon">
+            <h1>Suavemente</h1>
         </div>
-        <nav class="navbar">
-            <a href="#" class="link">Home</a>
-            <a href="#" class="link">Help</a>
-            <a href="#" class="link">Profile</a>
+        <!-- Barra de navegación -->
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Ayuda</a>
         </nav>
     </header>
+    <!-- Main -->
     <main>
-        
-        <section class="formular">
-            <h1>Login</h1>
-            
-            <form>
-                <div class="username">
-                    <input type="text" name="username" id="Usernm" required placeholder="Username">
-                </div>
-                <div class="password">
-                    <input type="password" name="password" id="Pswd" minlength="8" required placeholder="Password">
-                    <input onclick=ojo() type=button value="👁️">
-                </div>
-                <div class="mail">
-                    <input type="email" name="email" id="Mail" required>
-                    <label>E-mail</label>
-                </div>
-                <div class="forgetPassword">Forget password?</div>
-                <button id="button">crear</button>
-
-
-                <div class="notYet">
-                    Need an account? <a href="inicion.html" >register now</a>
-                </div>
-            </form>
-        </section>
+        <!-- Inicio de sesión -->
+        <form>
+            <div class="title">
+                <h2>Inicio de sesión</h2>
+            </div>
+            <div class="username">
+                <input type="text" placeholder="Nombre de usuario" required>
+            </div>
+            <div class="password">
+                <input type="password" placeholder="Contraseña" required>
+                <button class="verContraseña">VER</button>
+            </div>
+            <div class="mail">
+                <input type="email" placeholder="E-mail" required>
+            </div>
+            <div class="crearCuenta">
+                <p>¿No tienes cuanta?</p>
+                <a href="#">Crear una.</a>
+            </div>
+            <div class="botonIniciar">
+                <input type="submit" value="Iniciar Sesion">
+            </div>
+        </form>
     </main>
-    <footer>
-       
-    
-    </footer>
-    <script src="script.js"></script>
 </body>
+
 </html>
