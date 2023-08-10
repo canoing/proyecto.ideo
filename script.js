@@ -1,26 +1,33 @@
-const Usernm = document.getElementById('Usernm')
-const Pswd = document.getElementById('Pswd')
-const button = document.getElementById('button')
-button.addEventListener('click',(e) => {
+const Usernm = document.getElementById('Usernm');
+const Pswd = document.getElementById('Pswd');
+const button = document.getElementById('button');
 
-e.preventDefault()
+button.addEventListener('click', (e) => {
+    e.preventDefault();
 
-const data = {
+    const data = {
+        Usernm: Usernm.value,
+        Pswd: Pswd.value
+    };
 
-Usernm: Usernm.value,
-pswd: pswd.value
+    console.log(data);
 
-}
+    // Realizar la redirección a inicion.html con parámetros
+    window.location = "inicion.html"
 
+});
 
-
-})
 function ojo(){
-var xd = 1
-if (xd == 1)
+
+if (Pswd.type == 'password')
 {
 
-    window.location="periodico.html"
+    Pswd.type = 'text';
+
+}
+else if(Pswd.type == 'text'){
+   
+    Pswd.type = 'password'
 
 }
 
