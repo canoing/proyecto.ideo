@@ -31,10 +31,4 @@ else if(Pswd.type == 'text'){
 
 }
 
-
-
 }
-
-
-
-
